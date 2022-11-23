@@ -1,0 +1,107 @@
+*{box-sizing: border-box;}
+header{
+    background-image: url(expphoto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width:100%;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Pacifico', cursive;
+}
+/* Style the top navigation bar */ 
+.topnav{
+    overflow:hidden;
+    width:100%;
+}
+.topnav a {
+    float:right;
+        text-align: center;
+        text-decoration: none;
+        color:black;
+        font-family:'Lucida Sans';
+        padding:5px;
+    }
+/* Change color on hover */
+.topnav a:hover{
+    color:lightslategray
+}
+.DDlogo{
+    width:40px;
+    height: 40px;
+    padding:5px;
+    float:left;
+}
+
+/* Creating two unequal columns that floats next to each other */
+.leftcolumn{
+    float: left;
+    width: 40%;
+    padding:5px;
+}
+.rightcolumn{
+    float:left;
+    width:60%;
+    padding:5px
+}
+.card{
+    padding: 10px;
+    margin-top: 20px;
+}
+/* Clear floats after the columns */
+ .row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.footer{
+    text-align: center;
+    padding:20px;
+    color:black;
+}
+.photo3{
+    padding:30px;
+    position:center;
+}
+p{
+    padding-right: 30px;
+    font-size: 17px;
+    font-family: Georgia;
+}
+
+/* Responsive layouto- when the screen is less than 1000px wide */
+@media screen and (max-width: 1000px){
+    header{
+        float:left;
+        width:100%;
+    }
+    .leftcolumn{
+        float:left;
+        width: 100%;
+        display:flex;
+        margin-left:auto;
+        margin-right:20px;
+    }
+
+    .rightcolumn{
+        float: left;
+        width:100%;
+    }
+    .footer{
+        float:left;
+        width:100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header{
+        float: left;
+        width:100%;
+    }
+    .leftcolumn, .rightcolumn, .footer{
+        float:left;
+        width:100%;
+    }
+}
